@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAuth, RecaptchaVerifier, connectAuthEmulator } from "firebase/auth";
 
-// Firebase configuration using environment variables
+// Use environment variables for sensitive information
 const firebaseConfig = {
   apiKey: "AIzaSyBMh5lo4x_Wx7BPMLTTX7JPnOytEd9QGMw",
   authDomain: "pashucare-b02ef.firebaseapp.com",
@@ -12,10 +12,14 @@ const firebaseConfig = {
   measurementId: "G-JDB6ZRF6VF"
 };
 
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-console.log(app)
- console.log(auth)
-export { auth };
+
+// Optional: Connect to Firebase Authentication Emulator for local development
+// Uncomment and adjust port if using local emulator
+// if (process.env.NODE_ENV === 'development') {
+//   connectAuthEmulator(auth, 'http://localhost:9099');
+// }
+
+export { auth, RecaptchaVerifier };
