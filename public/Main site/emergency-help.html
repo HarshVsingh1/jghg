@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आपातकालीन सहायता - पशु केयर</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .hero-section {
+            background-color: #ff6b6b;
+           color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+        }
+
+        .carousel-inner img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .alert-box {
+            background-color: #eb9966;
+            padding: 20px;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .alert-box h3 {
+            font-size:2.4rem;
+            margin-bottom: 10px;
+            color: black;
+            font-weight: 300;
+        }
+
+        .alert-box p {
+            font-size: 1.2rem;
+            color: #2c3e50;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #e74c3c;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .emergency-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .emergency-list li {
+           
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .emergency-list li .name {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 40px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            text-align: center;
+           
+            color: white;
+            padding: 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<script src="//code.tidio.co/ylsvi7ffo8j8a8gd8dro81c9yvkxeciw.js" async></script>
+<body>
+
+   
+    <header class="find-doctor-header">
+        <div class="logoimg"><img src="assests/logo.png" alt="" style="width: 1px; height: auto;"></div>
+        <div class="logo">पशु केयर</div>
+
+        <nav class="find-doctor-nav">
+            <a href="index.html">होम</a>
+            <a href="find-doctor.html" class="active">डॉक्टर खोजें</a>
+            <a href="emergency-help.html">आपातकालीन सहायता</a>
+            <a href="contact.html">संपर्क करें</a>
+        </nav>
+    </header>
+
+    <!-- Image Carousel (Cows & Buffaloes) -->
+    
+    <br><br><br><br>
+    <div class="container">
+
+        <!-- Emergency Alert Box -->
+        
+
+        <!-- Emergency Instructions -->
+        <section>
+            <h2 class="section-title">आपातकालीन सहायता के लिए निर्देश</h2>
+            <p>आपके पशु की हालत की गंभीरता के अनुसार, हमारी टीम द्वारा आपको त्वरित सहायता प्रदान की जाएगी। कृपया निम्नलिखित निर्देशों का पालन करें:</p>
+            <ul class="emergency-list">
+                <li>
+                    <div class="name">1. पशु को शांत रखें</div>
+                    <span>ध्यान रखें कि पशु को कोई और चोट न लगे।</span>
+                </li>
+                <li>
+                    <div class="name">2. नजदीकी पशु चिकित्सक से संपर्क करें</div>
+                    <span>हमारी वेबसाइट पर दिखाए गए नजदीकी डॉक्टरों से तुरंत संपर्क करें।</span>
+                </li>
+                <li>
+                    <div class="name">3. तत्काल चिकित्सा सहायता प्राप्त करें</div>
+                    <span>आपात स्थिति में तुरंत चिकित्सकीय मदद प्राप्त करने के लिए हमारी संपर्क संख्या पर कॉल करें।</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Emergency Contacts -->
+        <section>
+            <h2 class="section-title">आपातकालीन संपर्क विवरण</h2>
+            <p>नीचे दी गई आपातकालीन संपर्क सूची से आप तुरंत संपर्क कर सकते हैं:</p>
+            <ul class="emergency-list">
+                <li>
+                    <div class="name">
+                        <button 
+                            onclick="window.location.href='tel:+919876543210'" 
+                            style="border:none; background:none; color:blue; text-decoration:none; cursor:pointer;">
+                            डॉ. अमित कुमार
+                        </button>
+                    </div>
+                    <span>पशु चिकित्सक - +91 9876543210</span>
+                </li>
+                <li>
+                    <div class="name">
+                        <button 
+                            onclick="window.location.href='tel:+919123456789'" 
+                            style="border:none; background:none; color:blue; text-decoration:none; cursor:pointer;">
+                            डॉ. रेखा शर्मा
+                        </button>
+                    </div>
+                    <span>पशु चिकित्सक - +91 9123456789</span>
+                </li>
+                <li>
+                    <div class="name">
+                        <button 
+                            onclick="window.location.href='tel:18001234567'" 
+                            style="border:none; background:none; color:blue; text-decoration:none; cursor:pointer;">
+                            आपातकालीन हेल्पलाइन
+                        </button>
+                    </div>
+                    <span>टोल फ्री - 1800-123-4567</span>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Call to Action Button -->
+        <section>
+            <h2 class="section-title">आपातकालीन सहायता प्राप्त करें</h2>
+            <p>यदि आप तत्काल सहायता चाहते हैं, तो कृपया नीचे दिए गए संपर्क बटन पर क्लिक करें:</p>
+            <a href="tel:+919876543210" class="contact-btn">तुरंत कॉल करें</a>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer fade-in">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>पशु केयर</h4>
+                    <ul>
+                        <li><a href="about.html" class="fade-in">हमारे बारे में</a></li>
+                        <li><a href="services.html" class="fade-in">सेवाएं</a></li>
+                        <li><a href="privacy.html" class="fade-in">प्राइवेसी पॉलिसी</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>मदद</h4>
+                    <ul>
+                        <li><a href="faq.html" class="fade-in">सामान्य प्रश्न</a></li>
+                        <li><a href="emergency.html" class="fade-in">आपातकालीन सेवाएं</a></li>
+                        <li><a href="contact.html" class="fade-in">संपर्क करें</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>संपर्क</h4>
+                    <ul>
+                        <li><a href="tel:+91XXXXXXXXXX" class="fade-in">+91 XXXXX XXXXX</a></li>
+                        <li><a href="mailto:support@pashucare.com " class="fade-in">support@pashucare.com</a></li>
+                        <li>पशु केयर, नई दिल्ली</li>
+                    </ul>
+                </div>
+                <!-- Social Media Section in Footer -->
+    <div class="footer-col">
+        <h4>सोशल मीडिया</h4>
+        <div class="social-icons">
+            <a href="#" class="social-icon">
+                <img src="assests/facebook.png" alt="Facebook" class="social-img">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="assests/instagram.png" alt="Instagram" class="social-img">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="assests/twitter.png" alt="Twitter" class="social-img">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="assests/whatsapp.png" alt="WhatsApp" class="social-img">
+            </a>
+        </div>
+    </div>
+    
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 पशु केयर. सभी अधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

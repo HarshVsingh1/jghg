@@ -1,0 +1,459 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+/* Header Styles */
+.find-doctor-header {
+    background-color: #f6edd7;
+    padding: 15px 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.find-doctor-nav {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.find-doctor-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.find-doctor-nav a:hover,
+.find-doctor-nav a.active {
+    background-color: #e6d5b8;
+}
+
+/* Main Content Styles */
+.find-doctor-main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Hero Section */
+.find-doctor-hero {
+    text-align: center;
+    padding: 60px 20px;
+   
+    border-radius: 10px;
+    margin-bottom: 40px;
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
+}
+
+.find-doctor-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.find-doctor-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Search Section */
+.find-doctor-search {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+  
+    border-radius: 10px;
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
+}
+
+.search-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.location-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Auto Location Section */
+.auto-location-section {
+    text-align: center;
+}
+
+.current-location-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.current-location-btn:hover {
+    background-color: #45a049;
+}
+
+/* Manual Location Section */
+.manual-location-section {
+    display: flex;
+    gap: 15px;
+
+}
+
+.location-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+/* Search Filters */
+.search-filters {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.specialization-select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+/* Results Section */
+.find-doctor-results {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.results-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.doctors-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Doctor Card */
+.doctor-card {
+    
+    border-radius: 10px;
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
+  
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+}
+
+.doctor-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border: 2.5px solid black;
+    border-radius: 5px;
+}
+
+.doctor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-info {
+    padding: 20px;
+}
+
+.doctor-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.doctor-info p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.appointment-btn,
+.call-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.call-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.appointment-btn:hover {
+    background-color: #45a049;
+}
+
+.call-btn:hover {
+    background-color: #1976D2;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #4CAF50;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Status Messages */
+.location-error,
+.location-success {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.location-error {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.location-success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .find-doctor-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-filters {
+        flex-direction: column;
+    }
+
+    .doctors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .find-doctor-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .find-doctor-main {
+        margin-top: 60px;
+    }
+
+    .find-doctor-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .find-doctor-header {
+        position: static;
+    }
+
+    .find-doctor-search,
+    .contact-buttons {
+        display: none;
+    }
+}
+/* Logo Image Container *//* Logo Image Container */
+/* Header/Navbar Styles */
+.find-doctor-header {
+    background-color: #f6edd7;
+    padding: 5px 20px; /* Reduced padding */
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 60px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo Container */
+.logoimg {
+    width: 120px; /* Adjusted width */
+    height: 50px; /* Adjusted height */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.logoimg img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    max-height: 40px; /* Reduced max-height */
+}
+
+/* Navigation */
+.find-doctor-nav {
+    display: flex;
+    gap: 20px; /* Reduced gap */
+    align-items: center;
+    height: 100%;
+}
+
+.find-doctor-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px; /* Reduced font size */
+    padding: 6px 12px; /* Reduced padding */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Main Content - Fix overlapping */
+.find-doctor-main {
+    margin-top: 70px; /* Adjusted margin to prevent overlapping */
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .find-doctor-header {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .find-doctor-nav {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .find-doctor-main {
+        margin-top: 120px; /* Increased for mobile layout */
+    }
+}
+
+/* Optional: Compact navigation for larger screens */
+@media screen and (min-width: 769px) {
+    .find-doctor-nav {
+        height: 100%;
+        align-items: center;
+    }
+
+    .find-doctor-nav a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+/* Section spacing */
+.section {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Hero section adjustment */
+.find-doctor-hero {
+    padding-top: 40px; /* Reduced top padding */
+    margin-top: 0; /* Remove top margin if present */
+}
+
+/* Search section adjustment */
+.find-doctor-search {
+    position: relative;
+    z-index: 1; /* Lower than header */
+}
+
+/* For any fixed elements */
+.fixed-element {
+    z-index: 999; /* Lower than header */
+}
+

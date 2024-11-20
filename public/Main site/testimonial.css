@@ -1,0 +1,347 @@
+.impact-section {
+    padding: 80px 20px; /* Increased padding to accommodate card heights */
+    
+}
+
+.impact-section h2 {
+    text-align: center;
+    margin-bottom: 80px; /* Increased margin to accommodate protruding images */
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* Increased gap between cards */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* Added padding to prevent image cutoff */
+}
+
+.testimonial-card {
+  
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative; /* Added for proper stacking context */
+    margin-top: 60px; /* Added to prevent overlap with images */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensures image stays above card */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card h3 {
+    text-align: center;
+    margin-top: 70px; /* Added to accommodate image */
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.testimonial-card p {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.testimonial-card blockquote {
+    font-style: italic;
+    color: #34495e;
+    line-height: 1.8;
+    margin: 0;
+    padding: 15px;
+    position: relative;
+}
+
+.testimonial-card blockquote::before,
+.testimonial-card blockquote::after {
+    content: '"';
+    font-size: 2.5rem;
+    color: #3498db;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.testimonial-card blockquote::before {
+    top: -10px;
+    left: 0;
+}
+
+.testimonial-card blockquote::after {
+    bottom: -20px;
+    right: 0;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .testimonial-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 30px; /* Vertical gap increased for better spacing */
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial-container {
+        grid-template-columns: 1fr;
+        gap: 80px; /* Increased gap for single column layout */
+    }
+    
+    .impact-section h2 {
+        font-size: 2rem;
+        margin-bottom: 60px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+
+.impact-section {
+    padding: 80px 20px;
+}
+
+.impact-section h2 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 3rem;
+    color: #1a237e;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.why-us h2{
+    text-align: center;
+    
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 3rem;
+    color: #1a237e;
+    position: relative;
+    padding-bottom: 20px;
+    
+}
+.why-us h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    border-radius: 2px;
+    margin-bottom: 17px;
+}
+.hero h1{
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 3rem;
+    color: #1a237e;
+    position: relative;
+    padding-bottom: 20px;
+}
+.unique-section h2{
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 3rem;
+    color: #1a237e;
+    position: relative;
+    padding-bottom: 20px;
+}
+.unique-section h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 4px;
+        background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+        border-radius: 2px;
+        
+}
+.cards-section h2{
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 3rem;
+    color: #1a237e;
+    position: relative;
+    padding-bottom: 20px;
+    font-size: xx-large;
+}
+
+/* Decorative underline for heading */
+.impact-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    border-radius: 2px;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.testimonial-card {
+   
+    border-radius: 20px;
+    padding: 35px 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+    margin-top: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+   
+}
+
+.image-container {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover .image-container img {
+    transform: scale(1.05);
+}
+
+.testimonial-card h3 {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.testimonial-card p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.testimonial-card blockquote {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color: #334155;
+    line-height: 1.8;
+    margin: 0;
+    padding: 20px 15px;
+    position: relative;
+    font-size: 1rem;
+}
+
+.testimonial-card blockquote::before,
+.testimonial-card blockquote::after {
+    content: '"';
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    color: #4ecdc4;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.testimonial-card blockquote::before {
+    top: -10px;
+    left: 0;
+}
+
+.testimonial-card blockquote::after {
+    bottom: -30px;
+    right: 0;
+}
+
+/* Add subtle animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.testimonial-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .testimonial-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 30px;
+    }
+    
+    .impact-section h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial-container {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+    
+    .impact-section h2 {
+        font-size: 2rem;
+        padding: 0 15px;
+    }
+}
+
+
+

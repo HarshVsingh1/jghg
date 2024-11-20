@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pashu Care Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<script src="//code.tidio.co/ylsvi7ffo8j8a8gd8dro81c9yvkxeciw.js" async></script>
+<body class="find-doctor-page">
+    <!-- Header Section -->
+    <header class="find-doctor-header">
+        <div class="logoimg"><img src="assests/logo.png" alt=""></div>
+        <div class="logo">पशु केयर</div>
+
+        <nav class="find-doctor-nav">
+            <a href="index.html">होम</a>
+            <a href="find-doctor.html" class="active">डॉक्टर खोजें</a>
+            <a href="emergency-help.html">आपातकालीन सहायता</a>
+            <a href="contact.html">संपर्क करें</a>
+        </nav>
+    </header>
+    <br><br><br>
+
+    <!-- Main Content -->
+    <main class="find-doctor-main">
+        <!-- Hero Section -->
+        <section class="find-doctor-hero">
+            <h1 class="find-doctor-title">अपने पास के पशु चिकित्सक खोजें</h1>
+            <p class="find-doctor-subtitle">विश्वसनीय पशु चिकित्सकों से तुरंत सहायता प्राप्त करें</p>
+        </section>
+
+        <!-- Search Section -->
+        <section class="find-doctor-search" id="find-doctor-section">
+            <div class="search-options" id="doctor-search-options">
+                <div class="location-wrapper">
+                    <!-- Auto Location Section -->
+                    <div class="auto-location-section">
+                        <button class="current-location-btn" onclick="getLocation()">
+                            वर्तमान स्थान का उपयोग करें
+                        </button>
+                        <div class="loading-spinner" id="loading-spinner"></div>
+                        <div class="location-error" id="location-error"></div>
+                        <div class="location-success" id="location-success"></div>
+                    </div>
+            
+                    <!-- Manual Location Section -->
+                    <div class="manual-location-section">
+                        <input type="text" 
+                               id="location-input" 
+                               class="location-input" 
+                               placeholder="शहर या पिन कोड दर्ज करें">
+                    </div>
+            
+                    <!-- Coordinates Display -->
+                    <div class="coordinates-display" id="coordinates-display">
+                        <p id="latitude"></p>
+                        <p id="longitude"></p>
+                        <p id="accuracy"></p>
+                    </div>
+
+                    <!-- Specialization and Search -->
+                    <div class="search-filters">
+                        <select class="specialization-select" id="specialization-select">
+                            <option value="">विशेषज्ञता चुनें</option>
+                            <option value="general">सामान्य पशु चिकित्सक</option>
+                            <option value="surgery">पशु सर्जन</option>
+                            <option value="dental">पशु दंत चिकित्सक</option>
+                        </select>
+                       
+                        <button class="search-button" id="search-button">खोजें</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="find-doctor-results" style="display: none;">
+            <h2 class="results-title">डॉक्टर्स की सूची</h2>
+            <div class="doctors-grid" id="doctors-grid"></div>
+        </section>
+    </main>
+    <footer class="footer fade-in">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>पशु केयर</h4>
+                    <ul>
+                        <li><a href="about.html" class="fade-in">हमारे बारे में</a></li>
+                        <li><a href="services.html" class="fade-in">सेवाएं</a></li>
+                        <li><a href="privacy.html" class="fade-in">प्राइवेसी पॉलिसी</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>मदद</h4>
+                    <ul>
+                        <li><a href="faq.html" class="fade-in">सामान्य प्रश्न</a></li>
+                        <li><a href="emergency.html" class="fade-in">आपातकालीन सेवाएं</a></li>
+                        <li><a href="contact.html" class="fade-in">संपर्क करें</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>संपर्क</h4>
+                    <ul>
+                        <li><a href="tel:+91XXXXXXXXXX" class="fade-in">+91 XXXXX XXXXX</a></li>
+                        <li><a href="mailto:support@pashucare.com " class="fade-in">support@pashucare.com</a></li>
+                        <li>पशु केयर, नई दिल्ली</li>
+                    </ul>
+                </div>
+                <!-- Social Media Section in Footer -->
+    <div class="footer-col">
+        <h4>सोशल मीडिया</h4>
+        <div class="social-icons">
+            <a href="#" class="social-icon">
+                <img src="assests/facebook.png" alt="Facebook" class="social-img">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="assests/instagram.png" alt="Instagram" class="social-img">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="assests/twitter.png" alt="Twitter" class="social-img">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="assests/whatsapp.png" alt="WhatsApp" class="social-img">
+            </a>
+        </div>
+    </div>
+    
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 पशु केयर. सभी अधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <!-- Scripts -->
+    <script src="location.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,1073 @@
+header {
+    background-color: #fff3d9;
+    padding: 15px 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(18, 16, 16, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* This creates space between logo and nav links */
+    align-items: center;
+    width: 100%; /* Ensure nav takes full width */
+}
+
+/* Logo styles */header {
+    background-color: #fff3d9;
+    padding: 15px 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Updated Logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Increased gap between logo image and text */
+    margin-right: auto;
+}
+
+.logoimg {
+    width: 150px; /* Increased from 100px to 150px */
+    height: auto; /* Changed to auto to maintain aspect ratio */
+    min-height: 150px; /* Added minimum height */
+}
+
+.logoimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures image maintains its aspect ratio */
+}
+
+.logo span {
+    font-size: 32px; /* Increased from 24px to 32px */
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-left: auto; /* This pushes nav links to the right */
+    padding: 0; /* Remove default padding */
+    margin-right: 0; /* Remove right margin */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.nav-links li a:hover {
+    background-color: #e6d5b8;
+    color: #000;
+}
+
+/* Remove the margin-left: 250px from nav-links */
+
+/* Rest of your CSS remains the same */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        margin-left: auto; /* Push hamburger to the right */
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #f6edd7;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        margin: 0; /* Remove margin in mobile view */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Hamburger Animation */
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Additional Mobile Adjustments */
+@media screen and (max-width: 480px) {
+    .logo span {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px; /* To account for fixed navbar */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    max-width: 800px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Darker color for better contrast */
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.8; /* Slightly increased line height for better readability */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    letter-spacing: 0.5px; /* Slightly increases spacing between letters */
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #e6d5b8; /* Matching the hover color from nav-links */
+    padding: 30px 0 15px; /* Reduced height */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-top: 200px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    gap: 20px; /* Reduced gap */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px; /* Reduced minimum width */
+    padding: 0 10px;
+}
+
+.footer-col h4 {
+    font-size: 16px; /* Reduced font size */
+    color: #333; /* Matching the nav-links color */
+    margin-bottom: 15px; /* Reduced margin */
+    font-weight: bold;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #333; /* Matching heading color */
+    height: 2px;
+    width: 40px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.footer-col ul li a {
+    color: #333; /* Matching nav-links color */
+    text-decoration: none;
+    font-size: 14px; /* Reduced font size */
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.footer-col ul li a:hover {
+    color: #000;
+    padding-left: 5px;
+}
+
+.footer-col .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-col .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-col .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.footer-col .social-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.footer-col .social-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .footer-col .social-icons {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .footer-col .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-col .social-img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .row {
+        justify-content: space-around;
+    }
+    
+    .footer-col {
+        flex: 0 1 calc(50% - 20px);
+        min-width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .footer-col {
+        flex: 0 1 calc(50% - 15px);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .footer-col {
+        flex: 0 1 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-col h4::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-col .social-icons {
+        justify-content: center;
+    }
+}
+
+
+.intro {
+    display: flex;
+    justify-content:flex-end
+    align-items: center; /* Centers content vertically */
+    padding: 20px;
+   
+    border:1px solid black;
+    max-width: 1900px;
+    margin-left: 10%;
+    margin-right: auto;
+    min-height: 450px;
+    
+    font-family: 'Arial', sans-serif; /* Modern font */
+    color: #333; /* Darker text color for contrast */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; Smooth transitions
+}
+
+.intro:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+
+.secimg {
+    max-width: 550px;
+    height: auto;
+    border-radius:5px ;
+    margin-right: 20px;
+}
+
+.data {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 1.5;
+    margin-left: 160px;
+}
+.buff{
+    margin-top: 50px;
+}
+.buff img{
+  height:375px;
+  width: 2300px;
+  margin-top: 50px;
+}
+
+/* Location toggle styling */
+.location-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.location-toggle button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.location-toggle button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+/* Results section styling */
+.results-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.results-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#doctor-list {
+    display: grid;
+    gap: 20px;
+    padding: 15px;
+}
+
+/* Footer styling */
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+ 
+        background: linear-gradient(rgba(255, 243, 217, 0.3), rgba(255, 243, 217, 10)), 
+                    url('assests/bgimg.png') ;
+      
+                    opacity: 0;
+                    animation: fadeIn 1s ease-in forwards;
+   
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* .footer {
+    background-color: #24262b;
+    padding: 70px 0 30px;
+    width: 100vw; /* Use viewport width */
+   
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px; /* Increased padding for better mobile spacing */
+    box-sizing: border-box;
+   
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: clamp(18px, 2vw, 22px);
+    color: #fff;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    width: 50px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 15px;
+}
+
+.footer-col ul li a {
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: clamp(14px, 1.5vw, 16px);
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-col .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-icons a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .row {
+        justify-content: space-around;
+    }
+    
+    .footer-col {
+        flex: 0 1 calc(50% - 30px);
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px; /* Reduced padding for smaller screens */
+    }
+    
+    .footer-col {
+        flex: 0 1 calc(50% - 20px);
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 15px; /* Further reduced padding for mobile */
+    }
+
+    .footer-col {
+        flex: 0 1 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-col h4::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-col .social-icons {
+        justify-content: center;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .location-toggle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+    }
+}
+
+.why-us {
+   
+    padding: 50px 20px;
+    position: relative;
+    text-align: center;
+   
+   
+    opacity: 1;
+}
+
+.why-us h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.why-us-description {
+    margin: 10px 0 30px;
+    color: #666;
+    font-size: 1.1em;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: linear-gradient(90deg, #4d3c9e, #268edb);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.stat-label {
+    display: block;
+    margin-top: 5px;
+}
+
+.why-us-features {
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    margin-left: 350px;
+    padding: 20px 0;
+  
+    
+}
+
+.feature {
+    text-align: center;
+    max-width: 400px;
+    margin-top: 200px;
+    height: 300px;
+
+    
+}
+
+.feature-icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+    margin:40px;
+    margin-bottom: 6opx;
+}
+
+/* Update for video styling */
+.background-video {
+    width: 100%;
+    max-width: 100%; /* Changed from 1200px to 100% */
+   
+    border-radius: 15px;
+ 
+    
+    position: relative;
+    padding-top: 56.25%;
+    margin-bottom: 50px; /* 16:9 Aspect Ratio */
+}
+
+/* Video Element */
+.background-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 475px;
+    object-fit: cover; /* This ensures the video covers the container */
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+/* Parent Container Adjustment */
+.why-us {
+  
+    padding: 50px 20px;
+    position: relative;
+    text-align: center;
+    width: 99%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Container for better width control */
+.container {
+    width: 100%;
+    max-width: 1800px; /* Increased max-width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1200px) {
+    .background-video {
+        margin: 40px auto 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background-video {
+        margin: 30px auto 0;
+    }
+}
+
+/* Optional: Add smooth scaling animation on hover */
+ .background-video:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+} 
+
+
+/* Parent container for features and video */
+/* Individual Feature Box */
+
+/* Parent container for features and video */
+
+/* Video Container - Fixed */
+
+/* Responsive Design */
+/* General Styling */
+
+
+/* General link transitions */
+
+
+/* General body fade-in on load */
+/* Google Translate Widget Styling */
+.google-translate-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide Google Translate attribution */
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+/* Hide the top frame when in translate mode */
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+/* Style the dropdown */
+.goog-te-combo {
+    padding: 8px 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: white;
+    color: #333;
+}
+
+.goog-te-combo:hover {
+    border-color: #4CAF50;
+}
+
+.goog-te-combo:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+    .google-translate-container {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .goog-te-combo {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+.cards-section {
+    text-align: center;
+    padding: 20px;
+   
+}
+
+.cards-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cards-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+   
+}
+
+.card {
+    
+    border: 3px solid black;
+    border-radius: 10px; /* Initial border radius */
+    width: 300px; /* Square dimension */
+    height: 300px; /* Square dimension */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-radius 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 70%; /* Adjust image height */
+    border-radius: 10px;
+    object-fit: cover; /* Ensures the image fits properly */
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.card:hover {
+    border-radius: 30px; /* Increases border radius on hover */
+    transform: scale(1.05); /* Adds a slight zoom effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow effect */
+}
+
+
+#google_translate_element {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+    margin-top: 40px;
+}
+
+/* Customize the translate button/dropdown */
+.goog-te-gadget {
+    font-family: Arial, sans-serif;
+}
+
+.goog-te-gadget-simple {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 8px 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hover effect */
+.goog-te-gadget-simple:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-color: #ccc;
+}
+
+/* Style the dropdown text */
+.goog-te-menu-value {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Remove the default border */
+.goog-te-menu-value span {
+    border: none !important;
+}
+
+/* Hide the original Google Translate icon if desired */
+.goog-te-gadget-icon {
+    display: none;
+}
+.mn{
+    border-radius: 5px;
+}
+
+.imgface img {
+    height: 180px;  /* significantly reduced height */
+    border-radius: 5px;
+    position: absolute;  /* changed to absolute positioning */
+    top: -65px;    /* moves it above the header */
+    left: 50%;     /* centers horizontally */
+    transform: translateX(-50%);  /* ensures perfect centering */
+    z-index: -1001; /* places it above the header which has z-index: 1000 */
+}
+
+.imgface {
+    position: relative;  /* container positioning */
+    width: 100%;
+}
+
+.card{
+    border: 5px solid white;
+}
+.find-doctor-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 32px;
+    font-weight: bolder;
+ 
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
